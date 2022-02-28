@@ -35,8 +35,15 @@ public class AdvancedPlayerController : MonoBehaviour
         ApplyGravity();
         ProcessJumping();
     }
-
-    void PlayerMover()
+    //Makes the player bounce up if they collide with an object with the "Bouncy" tag
+    void OnControllerColliderHit(ControllerColliderHit hit)
+    {
+        if (hit.gameObject.tag == "Bouncy")
+        {
+            velocity.y = 5f;
+        }
+    }
+        void PlayerMover()
     {
         float horizontal = Input.GetAxisRaw("Horizontal");
         float vertical = Input.GetAxisRaw("Vertical");

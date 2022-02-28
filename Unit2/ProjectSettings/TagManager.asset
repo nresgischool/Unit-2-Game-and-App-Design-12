@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Destroyable
   - Trigger
+  - Bouncy
   layers:
   - Default
   - TransparentFX
