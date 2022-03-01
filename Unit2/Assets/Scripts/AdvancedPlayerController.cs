@@ -35,6 +35,7 @@ public class AdvancedPlayerController : MonoBehaviour
         ApplyGravity();
         ProcessJumping();
     }
+
     //Makes the player bounce up if they collide with an object with the "Bouncy" tag
     void OnControllerColliderHit(ControllerColliderHit hit)
     {

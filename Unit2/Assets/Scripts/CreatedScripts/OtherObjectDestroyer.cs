@@ -5,14 +5,8 @@ using UnityEngine;
 public class OtherObjectDestroyer : MonoBehaviour
 {
     public GameObject destroy;
-    /*private void OnControllerColliderHit(ControllerColliderHit other)
-    {
-        if(other.gameObject.tag == "Trigger")
-        {
-            Destroy(destroy);
-            Debug.Log("hit");
-        }
-    }*/
+
+    //Destroy and object if two unrelated objects come in contact
     void OnCollisionEnter(Collision col)
     {
         if(col.gameObject.tag == "Trigger")
@@ -22,6 +16,7 @@ public class OtherObjectDestroyer : MonoBehaviour
             ChangeMyColor();
         }
     }
+    //Changes the color of the object that come in contact because why not
     void ChangeMyColor()
     {
         GetComponent<Renderer>().material.color = Random.ColorHSV(0f, 1f, 1f, 1f, 0.5f, 1f);
