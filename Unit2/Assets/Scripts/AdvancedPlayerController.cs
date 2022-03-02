@@ -23,6 +23,10 @@ public class AdvancedPlayerController : MonoBehaviour
     public float jumpHeight = 3f;
     public bool allowJumping = true;
 
+    //Variables for the max and min for randomizer
+    float minValue = 0f;
+    float maxValue = 10f;
+
     private void Start()
     {
         Cursor.lockState = CursorLockMode.Locked;
@@ -41,10 +45,17 @@ public class AdvancedPlayerController : MonoBehaviour
     {
         if (hit.gameObject.tag == "Bouncy")
         {
-            velocity.y = 5f;
+            // Knocks the player up by a random velocity between min and max
+            velocity.y = Random.Range(minValue,maxValue);
+        }
+        if (hit.gameObject.tag == "KnockBack")
+        {
+            // Knocks the player up by a random velocity between min and max
+            velocity.z = Random.Range(minValue, maxValue);
         }
     }
-        void PlayerMover()
+
+    void PlayerMover()
     {
         float horizontal = Input.GetAxisRaw("Horizontal");
         float vertical = Input.GetAxisRaw("Vertical");
