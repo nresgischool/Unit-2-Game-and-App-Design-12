@@ -26,6 +26,12 @@ public class SimplePlayerController : MonoBehaviour
         ProcessJumping();
     }
 
+    // Locks the cursor so that the third person level looks more simpler
+    private void Start()
+    {
+        Cursor.lockState = CursorLockMode.Locked;
+    }
+
     void PlayerMover()
     {
         // Turn player based on mouse movement

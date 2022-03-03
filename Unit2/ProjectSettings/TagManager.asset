@@ -8,7 +8,8 @@ TagManager:
   - Trigger
   - Bouncy
   - object
-  - KnockBack
+  - Slide
+  - StopSliding
   layers:
   - Default
   - TransparentFX

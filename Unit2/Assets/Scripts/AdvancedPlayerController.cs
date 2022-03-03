@@ -48,10 +48,16 @@ public class AdvancedPlayerController : MonoBehaviour
             // Knocks the player up by a random velocity between min and max
             velocity.y = Random.Range(minValue,maxValue);
         }
-        if (hit.gameObject.tag == "KnockBack")
+
+        if (hit.gameObject.tag == "Slide")
         {
-            // Knocks the player up by a random velocity between min and max
-            velocity.z = Random.Range(minValue, maxValue);
+            // Slides the player backwards when on object with slide tag
+            velocity.z = -2f;
+        }
+        // Undos the slide effect when the player should not be sliding
+        else if(hit.gameObject.tag == "StopSliding")
+        {
+            velocity.z = 0f;
         }
     }
 
