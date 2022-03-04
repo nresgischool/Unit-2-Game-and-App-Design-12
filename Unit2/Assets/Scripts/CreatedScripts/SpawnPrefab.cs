@@ -4,11 +4,7 @@ using UnityEngine;
 
 public class SpawnPrefab : MonoBehaviour
 {
-    [SerializeField] private GameObject prefab;
-
-    [SerializeField] private Vector2 spawnPosition;
-
-    [SerializeField] private bool random;
+    public GameObject prefab;
     // Start is called before the first frame update
     void Start()
     {
