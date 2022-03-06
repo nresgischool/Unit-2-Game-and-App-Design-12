@@ -1,0 +1,11 @@
+Model Information:
+* title:	A queen from the Lewis chessmen
+* source:	https://sketchfab.com/3d-models/a-queen-from-the-lewis-chessmen-af096aa7ca934f84b6d64c89a8e312d4
+* author:	The British Museum (https://sketchfab.com/britishmuseum)
+
+Model License:
+* license type:	CC-BY-NC-SA-4.0 (http://creativecommons.org/licenses/by-nc-sa/4.0/)
+* requirements:	Author must be credited. No commercial use. Modified versions must have the same license.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "A queen from the Lewis chessmen" (https://sketchfab.com/3d-models/a-queen-from-the-lewis-chessmen-af096aa7ca934f84b6d64c89a8e312d4) by The British Museum (https://sketchfab.com/britishmuseum) licensed under CC-BY-NC-SA-4.0 (http://creativecommons.org/licenses/by-nc-sa/4.0/)

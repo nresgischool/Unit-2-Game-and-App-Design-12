@@ -4,19 +4,33 @@ using UnityEngine;
 
 public class SpawnPrefab : MonoBehaviour
 {
+    public float minValue;
+    public float maxValue;
+    private float currentTime;
+    private float timeTillPrefab = 5;
+    private float maxTime = 3;
     public GameObject prefab;
     // Start is called before the first frame update
     void Start()
     {
-        Instantiate(prefab, new Vector3(0, 0, 0), Quaternion.identity);
+        timeTillPrefab = Random.Range(0, maxTime);
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (transform.position.y >= 10.12104)
+        // Instantiates a prefab whenever currentTime goes over the time till next prefab
+        currentTime += Time.deltaTime;
+        if (currentTime > timeTillPrefab)
         {
-            Instantiate(prefab, new Vector3(0, 0, 0), Quaternion.identity);
+            InstantiatePrefab();
         }
+    }
+
+    public void InstantiatePrefab()
+    {
+        // Instiates the prefab and resets currentTime
+        Instantiate(prefab, new Vector3(Random.Range(minValue, maxValue), 30, 80), Quaternion.identity);
+        currentTime = 0;
     }
 }

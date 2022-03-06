@@ -6,15 +6,18 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/AdvancedPlayground.unity
+    path: Assets/Scenes/Entryway.unity
     guid: febfccc7de8ad4f499c4feaf3a62edbd
   - enabled: 1
     path: Assets/Scenes/Scene2.unity
     guid: 47bbe85f9fae6264f9b3c3c782e9ea8a
   - enabled: 1
+    path: Assets/Scenes/DeclineFellows.unity
+    guid: 9861ab8e56e60944a92e81347e449553
+  - enabled: 1
     path: Assets/Scenes/PlayGround.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
   - enabled: 1
-    path: Assets/Scenes/TopDownLevel.unity
+    path: Assets/Scenes/MazeLevel.unity
     guid: bdb6f0adbe2aa6c44b53edd5ae78e055
   m_configObjects: {}

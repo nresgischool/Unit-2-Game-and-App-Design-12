@@ -3,13 +3,14 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-/*public class MoveToNextLevel : MonoBehaviour
+public class MoveToNextLevel : MonoBehaviour
 {
-    private void OnTriggerEnter(Collider other)
+    void OnTriggerEnter(Collider other)
     {
         if(other.gameObject.tag == "Player")
         {
+            Debug.Log("Teleporting");
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
         }
     }
-}*/
+}
