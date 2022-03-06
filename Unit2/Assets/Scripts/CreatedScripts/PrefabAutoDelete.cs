@@ -4,18 +4,12 @@ using UnityEngine;
 
 public class PrefabAutoDelete : MonoBehaviour
 {
-    private float time;
     public float lifeTime;
 
     // Start is called before the first frame update
     void Start()
     {
+        // Destroys the prefab when its lifeTime runs out
         Destroy(gameObject, lifeTime);
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-
     }
 }

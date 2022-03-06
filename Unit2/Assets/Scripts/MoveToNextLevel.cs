@@ -9,7 +9,6 @@ public class MoveToNextLevel : MonoBehaviour
     {
         if(other.gameObject.tag == "Player")
         {
-            Debug.Log("Teleporting");
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
         }
     }
