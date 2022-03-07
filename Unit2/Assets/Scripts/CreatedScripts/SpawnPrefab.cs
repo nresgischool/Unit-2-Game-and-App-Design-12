@@ -10,9 +10,11 @@ public class SpawnPrefab : MonoBehaviour
     private float timeTillPrefab = 5;
     private float maxTime = 3;
     public GameObject prefab;
+
     // Start is called before the first frame update
     void Start()
     {
+        // Sets the timeTillPrefab a random number between 0 and 5
         timeTillPrefab = Random.Range(0, maxTime);
     }
 

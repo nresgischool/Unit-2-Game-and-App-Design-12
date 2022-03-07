@@ -5,6 +5,7 @@ using UnityEngine;
 public class PickUpObject : MonoBehaviour
 {
     //Found online but altered to be able to show players arms
+
     public GameObject myHands; //reference to your hands/the position where you want your object to go
     public GameObject leftHand, rightHand; 
     bool canpickup; //a bool to see if you can or cant pick up the item
