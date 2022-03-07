@@ -6,9 +6,6 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/3d Platformer.unity
-    guid: daaeaf2709eaedf4fa8244ef29b83497
-  - enabled: 1
     path: Assets/Scenes/Entryway.unity
     guid: febfccc7de8ad4f499c4feaf3a62edbd
   - enabled: 1
